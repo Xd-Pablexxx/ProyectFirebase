@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UbicacionPedidoFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/google_map"
+            android:name="com.google.android.gms.maps.SupportMapFragment">
+
+        </fragment>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|right"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/layout_guardar_ubicacion"
+            android:background="@drawable/backgroundsetubicacion"
+            android:gravity="center"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:drawableLeft="@drawable/ic_ubicacion"
+                android:gravity="center_vertical"
+                android:text="Guardar Ubicacion"></TextView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|right"
+        >
+        <LinearLayout
+            android:layout_width="50dp"
+            android:background="@drawable/backgrounmostrarubicacion"
+            android:id="@+id/layout_mostrar_ubicacion"
+            android:gravity="center"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:drawableLeft="@drawable/ic_map"
+                android:gravity="center_vertical"
+               ></TextView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_ubicacion_mostrar"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="#57000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:gravity="center">
+        <LinearLayout
+
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            android:orientation="vertical"
+            android:background="@drawable/backgroundeliminar">
+            <TextView
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="UBICACION"
+                android:textSize="17sp"
+                android:textColor="#FFFFFF"></TextView>
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_map">
+
+            </ImageView>
+            <TextView
+                android:id="@+id/txt_latitud"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Latitud:79.46181166917086"
+                android:textSize="15sp"
+                android:textColor="#FFFFFF"></TextView>
+            <TextView
+                android:gravity="center"
+                android:id="@+id/txt_longitud"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Longitud:79.46181166917086"
+                android:textSize="15sp"
+                android:textColor="#FFFFFF"></TextView>
+            <TextView
+                android:gravity="center"
+                android:id="@+id/txt_calle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calle:LI-571 / San José 379, San José 13830, Perú"
+                android:textSize="15sp"
+                android:textColor="#FFFFFF"></TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

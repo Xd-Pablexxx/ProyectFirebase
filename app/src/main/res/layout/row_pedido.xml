@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contenedor"
+        app:cardCornerRadius="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="3dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="10dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:text="Pedido-User"
+
+                    android:textColor="#039BE5">
+
+                </TextView>
+
+
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="Fecha Creacion"
+                    android:drawableLeft="@drawable/ic_calendario"
+                    android:id="@+id/Fecha"
+                    ></TextView>
+
+                <TextView
+                    android:textColor="#000000"
+                    android:id="@+id/EstadoPedido"
+                    android:gravity="right"
+                    android:layout_marginTop="3dp"
+                    android:drawableLeft="@drawable/ic_entrega"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No entregado"></TextView>
+                <TextView
+                    android:textColor="#000000"
+                    android:id="@+id/Direccion"
+                    android:gravity="right"
+                    android:layout_marginTop="3dp"
+                    android:drawableLeft="@drawable/ic_mapa"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Direccion"></TextView>
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

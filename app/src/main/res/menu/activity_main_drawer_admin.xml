@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/homeAdminFragment"
+            android:icon="@drawable/ic_list"
+            android:title="Categorias" />
+        <item
+            android:id="@+id/listPedidoAdminFragment"
+            android:icon="@drawable/ic_car"
+            android:title="Pedidos" />
+        <item
+            android:id="@+id/ubicacionPedidoAdminFragment"
+            android:icon="@drawable/ic_map"
+            android:title="Ubicacion del Pedido" />
+        <item
+            android:id="@+id/recomendacionAdminFragment"
+            android:icon="@drawable/ic_list"
+            android:title="Ofertas" />
+    </group>
+</menu>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#FB8C00">
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:id="@+id/rc_categoria"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+
+            android:orientation="horizontal"
+            tools:listitem="@layout/row_categoria_col">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+
+       android:paddingTop="135dp">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="@drawable/backgroundinicio"
+           android:paddingTop="20dp">
+           <androidx.recyclerview.widget.RecyclerView
+               android:layout_width="match_parent"
+               android:id="@+id/rc_recomendacion"
+               tools:listitem="@layout/row_producto_home"
+               android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+       </LinearLayout>
+
+   </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeAdminFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rc_categoria"
+            android:layout_width="match_parent"
+            tools:listitem="@layout/row_categoria_admin"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|right">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_flotating_agregar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            app:srcCompat="@drawable/ic_add"
+            app:backgroundTint="#F4511E"
+            app:tint="#FFFFFF"
+            tools:ignore="VectorDrawableCompat" />
+    </LinearLayout>
+
+
+</RelativeLayout>

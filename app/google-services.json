@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "401879109146",
+    "project_id": "taisbd",
+    "storage_bucket": "taisbd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:401879109146:android:7ef9d0adb2829f6b714ba3",
+        "android_client_info": {
+          "package_name": "com.examen.firebaseproyect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "401879109146-0re9bn9svuvdbi9l16s8c917bqo3g0ot.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.examen.firebaseproyect",
+            "certificate_hash": "c1397770f4bf2aa607d76c5cd22d894e71bacb70"
+          }
+        },
+        {
+          "client_id": "401879109146-qklkmoav5kb0rqq8p9hor5vun09qcpvk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3gQavx_i7iGOsvcws7BN7cbzL1ZPRLcI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "401879109146-qklkmoav5kb0rqq8p9hor5vun09qcpvk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

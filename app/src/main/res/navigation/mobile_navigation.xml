@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.examen.firebaseproyect.HomeFragment"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/homeAdminFragment"
+        android:name="com.examen.firebaseproyect.HomeAdminFragment"
+
+        tools:layout="@layout/fragment_home_admin" />
+    <fragment
+        android:id="@+id/addCategoriaAdminFragment"
+        android:name="com.examen.firebaseproyect.AddCategoriaAdminFragment"
+
+        tools:layout="@layout/fragment_add_categoria_admin" />
+    <fragment
+        android:id="@+id/listProductoAdminFragment"
+        android:name="com.examen.firebaseproyect.ListProductoAdminFragment"
+        tools:layout="@layout/fragment_list_producto_admin" />
+    <fragment
+        android:id="@+id/addProductoAdminFragment"
+        android:name="com.examen.firebaseproyect.AddProductoAdminFragment"
+        tools:layout="@layout/fragment_add_producto_admin" />
+    <fragment
+        android:id="@+id/udpateCategoriaAdminFragment"
+        android:name="com.examen.firebaseproyect.UpdateCategoriaAdminFragment"
+        tools:layout="@layout/fragment_update_categoria_admin" />
+    <fragment
+        android:id="@+id/listPedidoAdminFragment"
+        android:name="com.examen.firebaseproyect.ListPedidoAdminFragment"
+
+        tools:layout="@layout/fragment_list_pedido_admin" />
+    <fragment
+        android:id="@+id/listProductoFragment"
+        android:name="com.examen.firebaseproyect.ListProductoFragment"
+        tools:layout="@layout/fragment_list_producto" />
+    <fragment
+        android:id="@+id/compraProductoFragment"
+        android:name="com.examen.firebaseproyect.CompraProductoFragment"
+        tools:layout="@layout/fragment_compra_producto" />
+    <fragment
+        android:id="@+id/listCompra"
+        android:name="com.examen.firebaseproyect.ListCompra"
+
+        tools:layout="@layout/fragment_list_compra" />
+    <fragment
+        android:id="@+id/ubicacionPedidoFragment"
+        android:name="com.examen.firebaseproyect.UbicacionPedidoFragment"
+
+        tools:layout="@layout/fragment_ubicacion_pedido" />
+    <fragment
+        android:id="@+id/listPedidoFragment"
+        android:name="com.examen.firebaseproyect.ListPedidoFragment"
+        tools:layout="@layout/fragment_list_pedido" />
+    <fragment
+        android:id="@+id/listPedidoDetalleFragment"
+        android:name="com.examen.firebaseproyect.ListPedidoDetalleFragment"
+
+        tools:layout="@layout/fragment_list_pedido_detalle" />
+    <fragment
+        android:id="@+id/updateProductoAdminFragmnet"
+        android:name="com.examen.firebaseproyect.UpdateProductoAdminFragmnet"
+
+        tools:layout="@layout/fragment_update_producto_admin_fragmnet" />
+    <fragment
+        android:id="@+id/ubicacionPedidoAdminFragment"
+        android:name="com.examen.firebaseproyect.UbicacionPedidoAdminFragment"
+
+        tools:layout="@layout/fragment_ubicacion_pedido_admin" />
+    <fragment
+        android:id="@+id/recomendacionAdminFragment"
+        android:name="com.examen.firebaseproyect.RecomendacionAdminFragment"
+
+        tools:layout="@layout/fragment_recomendacion_admin" />
+    <fragment
+        android:id="@+id/addRecomendacionAdminFragment"
+        android:name="com.examen.firebaseproyect.AddRecomendacionAdminFragment"
+
+        tools:layout="@layout/fragment_add_recomendacion_admin" />
+    <fragment
+        android:id="@+id/updateRecomendacionAdminFragment"
+        android:name="com.examen.firebaseproyect.UpdateRecomendacionAdminFragment"
+        android:label="fragment_update_recomendacion_admin"
+        tools:layout="@layout/fragment_update_recomendacion_admin" />
+    <fragment
+        android:id="@+id/compraOfertaFragment"
+        android:name="com.examen.firebaseproyect.CompraOfertaFragment"
+        android:label="fragment_compra_oferta"
+        tools:layout="@layout/fragment_compra_oferta" />
+
+</navigation>

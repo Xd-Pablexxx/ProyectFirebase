@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/producto_card"
+                android:layout_margin="3dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="10dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txt_nombre_producto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textAllCaps="true"
+                    android:text="NOMBRE DEL PRODUCTO"
+                    android:textColor="#039BE5">
+
+                </TextView>
+
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="Costo = 4 "
+                    android:id="@+id/txt_costo_producto"
+                    ></TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:visibility="gone"
+                android:id="@+id/card_visible"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_margin="10dp"
+                    android:id="@+id/img_producto"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                </ImageView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1.2"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txt_precio_producto"
+                            android:drawableLeft="@drawable/ic_precio"
+                            android:text="PRECIO: 0.0 F"
+                            android:textColor="#000000">
+
+                        </TextView>
+                        <TextView
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                            android:drawableLeft="@drawable/ic_almacen"
+                            android:text="Cantidad= 4 "
+                            android:id="@+id/txt_cantidad_producto"
+                            ></TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <Button
+                            android:layout_marginRight="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btn_aumentar_compra"
+                            app:icon="@drawable/ic_add_24"
+                            style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+                            ></Button>
+
+
+                        <Button
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btn_disminuir_compra"
+                            app:icon="@drawable/ic_minus_24"
+                            style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+                            ></Button>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
